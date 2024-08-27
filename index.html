@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let colors = ["yellow", "blue", "purple", "red"];
+
+      // Push
+      console.log("**********************");
+      console.log("Push function: ");
+      colors.push("green", "orange");
+      console.log(colors);
+
+      // Pop
+      console.log("**********************");
+      console.log("Pop function: ");
+      colors.pop();
+      console.log(colors);
+
+      // Unshift
+      console.log("**********************");
+      console.log("Unshift function: ");
+      colors.unshift("royalBlue");
+      console.log(colors);
+
+      // Shift
+      console.log("**********************");
+      console.log("Shift function: ");
+      colors.shift();
+      console.log(colors);
+
+      // Splice
+      console.log("**********************");
+      console.log("Splice function: ");
+      colors.splice(1, 1);
+      colors.splice(2, 1, "cherish");
+      console.log(colors);
+
+      // indexOf
+      console.log("**********************");
+      console.log("indexOf function: ");
+      const index = colors.indexOf("purple");
+      console.log(index);
+
+      // includes
+      console.log("**********************");
+      console.log("Includes function: ");
+      const include = colors.includes("blue");
+      console.log(include);
+
+      // Filter
+      console.log("**********************");
+      console.log("Filter function: ");
+      const filter = colors.filter((color) => {
+        return color != "purple";
+      });
+      console.log(filter);
+
+      //forEach
+      console.log("**********************");
+      console.log("forEach function: ");
+      colors.forEach(function (colors, index) {
+        console.log(`${index}`, colors);
+      });
+
+      // Every
+      console.log("**********************");
+      console.log("Every function: ");
+      let result1 = colors.every(function (color) {
+        return color == "red";
+      });
+      console.log(result1);
+
+      //  Map
+      console.log("**********************");
+      console.log("Map function: ");
+      colors.map((colors) => {
+        console.log(colors);
+      });
+
+      // Math functions
+      console.log("**********************");
+      console.log("Math function: ");
+      console.log(Math.round(4.8));
+      console.log(Math.round(4.2));
+      console.log(Math.floor(5.9));
+      console.log(Math.floor(5.2));
+      console.log(Math.ceil(6.6));
+      console.log(Math.ceil(6.3));
+      console.log(Math.sqrt(144));
+      console.log(Math.pow(2, 5));
+      console.log(2 ** 5);
+      console.log(Math.abs(-25));
+
+      // Date functions
+      console.log("**********************");
+      console.log("Date function: ");
+      console.log(new Date());
+
+      // String functions
+      console.log("**********************");
+      console.log("String functions: ");
+      const str = "Hey World! ";
+      const str1 = "How are you?";
+      console.log(str.slice(1, 7));
+      console.log(str.concat(str1));
+      console.log(str.charAt(8));
+      console.log(str.indexOf("World"));
+      console.log(str.includes("d"));
+      console.log(str.toUpperCase());
+      console.log(str.replace("World!", "User..."));
+    </script>
+  </body>
+</html>
